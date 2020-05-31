@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>8</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Core\ProductService.Core.Models\ProductService.Core.Models.csproj" />
+      <ProjectReference Include="..\..\Core\ProductService.Core.ServiceLayer\ProductService.Core.ServiceLayer.csproj" />
+      <ProjectReference Include="..\..\Core\ProductService.Core.Validation\ProductService.Core.Validation.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\ProductService.Infrastructure.Helpers\ProductService.Infrastructure.Helpers.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\ProductService.Infrastructure.Serialization.Json.Newtonsoft\ProductService.Infrastructure.Serialization.Json.Newtonsoft.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\ProductService.Infrastructure.Serialization.Json\ProductService.Infrastructure.Serialization.Json.csproj" />
+    </ItemGroup>
+
+
+</Project>
